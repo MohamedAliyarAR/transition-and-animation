@@ -1,0 +1,166 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>anime properties</title>
+  </head>
+  <body>
+    <!-- TRANSTION -->
+    <div class="fluid transition">
+      <h1 class="text animate__animated animate__tada">TRANSITION</h1>
+      <div class="move duration">HOVER HERE</div>
+    </div>
+    <div class="explaination">
+      <h3>
+        Transitions enable you to define the transition between two states of an
+        element. Different states may be defined using pseudo-classes like
+        :hover or :active or dynamically set using JavaScript.
+      </h3>
+      <h3>it is better to specify properties instead of all.</h3>
+      <h1>Constituent properties</h1>
+      <ol>
+        <li><strong>transition-delay</strong>:duration to wait</li>
+        <li>
+          <strong> transition-duration</strong>: time a to complete the
+          transition
+        </li>
+        <li>
+          <strong>transition-property</strong>:properties where transition
+          effect should be applied
+        </li>
+        <li>
+          <strong>transition-timing-function</strong>:to vary the speed so the
+          transition
+        </li>
+      </ol>
+    </div>
+
+    <!-- TWO-DIMENSION -->
+    <div class="fluid">
+      <div class="td">
+        <h1 class="twod text">TRANSFORM PROPERTY</h1>
+        <div class="rt">
+          <div class="rotate move twod">rotate</div>
+        </div>
+
+        <div class="tt">
+          <div class="translate move twod">translate</div>
+        </div>
+
+        <div class="sk">
+          <div class="skew move twod">skew</div>
+        </div>
+
+        <div class="sc">
+          <div class="scale move twod">scale</div>
+        </div>
+
+        <div class="ss">
+          <div class="transform-ori move twod">transform origin</div>
+        </div>
+      </div>
+    </div>
+    <div class="explaination">
+      <h3>transition is acheived with transform property</h3>
+      <h3></h3>
+      <h3>using it in :hover is best the practice and most familiar</h3>
+    </div>
+    <!-- Transition TIMING FUNCTION -->
+    <div class="fluid">
+      <center>
+        <h1 class="text">Transition timing function</h1>
+      </center>
+      <div class="timedFunc">
+        HOVER HERE
+        <div class="ease move">ease</div>
+        <div class="easein move">easein</div>
+        <div class="easeout move">easeout</div>
+        <div class="easeinout move">easeinout</div>
+        <div class="linear move">linear</div>
+      </div>
+    </div>
+    <div class="explaination">
+      <table>
+        <tr>
+          <th>name</th>
+          <th>start</th>
+          <th>mid</th>
+          <th>end</th>
+        </tr>
+        <tr>
+          <th>ease</th>
+          <td>slow</td>
+          <td>fast</td>
+          <td>slow</td>
+        </tr>
+        <tr>
+          <th>easein</th>
+          <td>slow</td>
+          <td>fast</td>
+          <td>fast</td>
+        </tr>
+        <tr>
+          <th>easeout</th>
+          <td>fast</td>
+          <td>fast</td>
+          <td>slow</td>
+        </tr>
+        <tr>
+          <th>easeinout</th>
+          <td>slow</td>
+          <td>fast</td>
+          <td>slow</td>
+        </tr>
+        <tr>
+          <th>linear</th>
+          <td>const</td>
+          <td>const</td>
+          <td>const</td>
+        </tr>
+      </table>
+      <h3>we can have our own time func using cubic bezier in google tools</h3>
+      <h3>
+        This property sets how an animation progresses through the duration of
+        each cycle.
+      </h3>
+    </div>
+    <!-- ANIMATION -->
+    <div class="container">
+      <div class="text">
+        <h1 class="animate__animated animate__bounce">ANIMATION</h1>
+      </div>
+      <div class="innerContainer">
+        <div class="ball"></div>
+      </div>
+    </div>
+    <div class="explaination block">
+      <h3>
+        <strong>ANIMATION</strong>
+        (format):name,duration,timing-func,delay,iteration-count,direction,fill-mode,play-state
+      </h3>
+      <h3>
+        <strong>DIRECTION</strong>:whether an animation should play forward,
+        backward, or alternate back and forth
+      </h3>
+      <h3>
+        <strong>FILL-MODE</strong>:the style of target before and after the
+        anime
+      </h3>
+      <h3>
+        <strong>play-state</strong>: property sets whether an animation is
+        running or paused
+      </h3>
+      <h3>
+        the difference between the transiton and animation is transition
+        requires a trigger but animation does not
+      </h3>
+      <h3>animation can be looped easily</h3>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  background-color: D6EFED;
+  font-size: 25px;
+}
+/* COMMON CLASS */
+.fluid {
+  background-color: 00ADB5;
+  margin-top: 1%;
+  padding: 2%;
+}
+.text {
+  color: #dddddd;
+  text-align: center;
+}
+.move {
+  display: block;
+  height: 100px;
+  width: 100px;
+  transition-property: width;
+  transition-duration: 1200ms;
+  text-align: center;
+  justify-content: center;
+}
+
+.explaination {
+  margin: 5%;
+  border: 5px solid black;
+}
+/* TRANSITION */
+
+.duration {
+  margin-top: 0%;
+  width: 20%;
+  background-color: aqua;
+  transition-duration: 1000ms;
+  transition-delay: 0s;
+  transition-timing-function: ease-in;
+  transition-property: background, width;
+}
+.duration:hover {
+  width: 100%;
+  background-color: 71C9CE;
+}
+
+li {
+  font-size: 25px;
+}
+
+/* TWO-DIMENSION */
+
+.td {
+  margin: 0;
+}
+
+.twod {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 2% auto;
+}
+
+.rotate {
+  background-color: DBE2EF;
+  transition: transform 500ms;
+  transition-timing-function: linear;
+}
+
+.transform-ori {
+  background-color: E3FDFD;
+  transition-timing-function: linear;
+  transition: transform 500ms;
+  transform-origin: top right;
+}
+.translate {
+  background-color: CBF1F5;
+  transition-timing-function: ease;
+  transition: transform 800ms;
+}
+
+.skew {
+  background-color: A6E3E9;
+  transition-timing-function: linear;
+  transition: transform 800ms;
+}
+.scale {
+  background-color: 71C9CE;
+  transition-timing-function: linear;
+  transition: transform 800ms;
+}
+
+.rt:hover > .rotate {
+  transform: rotate(90deg);
+}
+
+.tt:hover > .translate {
+  /* left: 300px; */
+  transform: translate(300px);
+}
+
+.sc:hover > .scale {
+  transform: scale(1.5);
+}
+
+.sk:hover > .skew {
+  transform: skew(-40deg);
+}
+
+.ss:hover > .transform-ori {
+  transform: rotate(-45deg);
+}
+
+/* TRANSITION TIMING FUNCTION */
+.timedFunc {
+  margin-right: 25%;
+  margin-left: 25%;
+  border: 5px solid black;
+  border-right: 5px dotted black;
+}
+
+.timedFunc:hover .move {
+  width: 100%;
+}
+.ease {
+  transition-timing-function: ease;
+  background-color: F9F7F7;
+}
+.easein {
+  transition-timing-function: ease-in;
+  background-color: DBE2EF;
+}
+.easeout {
+  transition-timing-function: ease-out;
+  background-color: azure;
+}
+.easeinout {
+  transition-timing-function: ease-in-out;
+  background-color: 3F72AF;
+}
+.linear {
+  transition-timing-function: linear;
+  background-color: 112D4E;
+}
+/* TABLE */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 50px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  overflow: hidden;
+}
+
+tr:nth-child(2n) {
+  background-color: #dddddd;
+}
+
+/* ANIMATION */
+.container {
+  background-color: 00ADB5;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 895vh;
+  bottom: 0;
+}
+.ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 40px;
+  left: 45%;
+  background-color: 3F72AF;
+  animation: anime 0.9s infinite backwards;
+}
+
+.block {
+  display: absolute;
+  margin-top: 95vh;
+}
+
+@keyframes anime {
+  10% {
+    height: 50px;
+    width: 50px;
+  }
+  50% {
+    height: 50px;
+    width: 40px;
+  }
+  75% {
+    transform: translateY(240px);
+    height: 40px;
+    width: 62px;
+  }
+
+  100% {
+    height: 50px;
+    font-weight: 50px;
+    transform: translateY(0px);
+  }
+}
